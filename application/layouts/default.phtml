@@ -1,0 +1,124 @@
+<?php echo $this->doctype()."\n"; ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Rabi Multiservices (Rabims.com)" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="all" />
+    <title>Servizi Rabi Multiservices</title>
+    <?php
+          echo $this->headLink()->prependStylesheet($this->baseUrl('css/style.css'), 'screen');
+          //echo $this->headLink()->appendStylesheet($this->baseUrl('css/print.css'), 'print');
+    ?>
+    <link rel="shortcut icon" href="<?php echo $this->baseUrl('images/favicon.ico'); ?>" type="image/x-icon" />
+</head>
+<body>
+	<div><a id="top" title="Ancora Inizio pagina"></a></div>
+	<div class="cOuterFrameFull">
+		<div class="TopHeader">
+			<div class="Logo"><a href="<?php echo $this->url(array('controller'=>'index'),'default',true); ?>"><img src="<?php echo $this->baseUrl('images/logo/RabiMultiservices.png'); ?>" alt="Rabi Multiservices" /></a></div>
+			<div class="HeaderContent">
+				
+				<!--<div class="LanguageBar">
+					
+				</div>-->
+				<div class="HeaderPath"><?php include 'includes/menu.inc.php'; ?></div>
+			</div>
+		</div>
+		<div class="cMain">
+			<div class="HeaderSeparator">&nbsp;</div>
+					<div class="cSidebar">
+						<!-- ######## AUTENTICAZIONE ####### -->
+						<?php
+							if (!$_SESSION['RABIMS_MEMBER']) {
+								echo '
+								<div class="cPanel">
+									<div class="cPanelHead">Accesso Utente'.$translate['LoginPanel'].'</div>
+									<div class="cBody">
+										<form action="#" method="post">
+											<table class="cDataTable">
+												<tr>
+													<td class="LongLabel">Utente'.$translate['LoginUsername'].':</td>
+													<td class="ar"><input type="text" name="username" maxlength="30" size="25" tabindex="1"/></td>
+												</tr>
+												<tr>
+													<td class="LongLabel">Password'.$translate['LoginPassword'].':</td>
+													<td class="ar"><input type="password" name="passwd" maxlength="30" size="25" tabindex="2"/></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="ar"><span class="FloatLeft"><a href="'.$this->url(array('controller'=>'chi-siamo'),'default',true).'" title="'.$translate['PasswordRetreive'].'">Password dimenticata?'.$translate['PasswordRetreive'].'</a></span>
+													<input type="submit" accesskey="S" tabindex="3" value="Accedi'.$translate['SendButton'].'" class="button1" /></td>
+												</tr>';
+												if ($_GET['msg']=="Err1" OR $_GET['msg']=="Err4") {
+													echo '<tr>';
+													echo '<td colspan="2"><span class="importante">'.$translate[$_GET['msg']].'</span></td>';
+													echo '</tr>';
+												}
+											echo '
+											</table>
+										</form>
+									</div>
+								</div>
+								';
+
+							} else {
+								echo'
+									<div class="cPanel">
+										<div class="cPanelHead">'.$translate['PanelTitle'].'</div>
+										<div class="cBody">
+											<table class="cDataTable">
+												<tr>
+													<td class="LongLabel">'.$translate['LoginUsername'].':</td>
+													<td class="ar">'.$_SESSION['username'].'</td>
+												</tr>
+												<tr>
+													<td><span class="relative"><img src="images/varie/profile.png"  alt="'.$translate['Profile'].'" /></span> &nbsp;<a href="?action=profile">'.$translate['Profile'].'</a></td>
+												</tr>
+												<tr>
+													<td><span class="relative"><img src="images/varie/xfce_system_exit.png"  alt="'.$translate['Logout'].'" /></span> &nbsp;<a href="admin/logout.php">'.$translate['Logout'].'</a></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								';
+							}
+						?>
+						<!-- ######## INFORMAZIONI ####### -->
+						<div class="cPanel">
+							<div class="cPanelHead"><?php echo $translate['InfoTitle']; ?></div>
+							<div class="cBody">
+								<table class="cDataTable">
+									<tr>
+										<td><span class="relative"><img src="images/varie/reply-sharp-thick.png"  alt="<?php echo $translate['PostReply']; ?>" /></span> &nbsp;<a href="<?php echo $this->url(array('controller'=>'chi-siamo','action'=>'index'),'default',true); ?>">Link<?php echo $translate['PostReply']; ?></a></td>
+									</tr>
+									<tr>
+										<td><span class="relative"><img src="images/varie/printer-48.png"  alt="<?php echo $translate['PagePrint']; ?>" /></span> &nbsp;<a href="javascript:print();"><?php echo $translate['PagePrint']; ?></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+			<div class="cMainbar">
+				<div class="BigPanel">
+					<div class="cPanelHead"><?php echo $this->view->title; ?></div>
+					<div class="cBody3">
+
+						<?php echo $this->layout()->content ?>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="http://www.rabims.com" title="Rabi Multiservices" class="RabiMsLogo"><img src="images/logo/RabiMultiservices1.png" alt="Rabi Multiservices" /></a>
+		<div class="copyright">
+			<p><?php echo $translate['FooterCopyright']; ?>: 01940530999  </p>
+			<a href="http://assistenza.rabims.it" title="Home Assistenza"><?php echo $translate['AssistenceHome']; ?></a>
+			|
+			<a href="http://www.rabims.com/contatti.php" title="Contatti"><?php echo $translate['Contacts']; ?></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {color: #444;background-color: #edf6e3;background-image: url(../images/bg/bg_page.jpg);background-position: top center;background-repeat: repeat-y;font-size: 10px;line-height: 14px;font-family:  Verdana,Cochin,Arial,Times New Roman;text-align: left;margin: 0px;padding: 0px;}
+
+h1, h2, h3 {font-size: 12px;line-height: 14px;font-weight: bold;margin: 0px;padding: 0px;}
+a:link, a:visited {color:  #446c0e;}
+a:hover {color:#7fc937;}
+acronym, abbr, dfn, .abbr  { border-bottom: 1px dotted; font-weight:bold;}
+
+hr{display:none}
+img { border:0;}
+
+input, select { font-size: 10px;  border: 1px solid silver;}
+textarea      { font-size: 11px;  border: 1px solid silver; }
+button        { font-size: 10px;  }
+
+input.disabled { background-color: #F0F0F0; }
+
+
+
+input:focus,select:focus,textarea:focus { background-color: #ffd }
+
+	div.break {clear:left;width:0;height:0;}
+	.justify { text-align:justify;}
+	.center{ text-align:center;}
+	.right{ text-align:right;}
+	.importante {color:red;font-weight:bold;}
+
+#macrocontainer {width: 700px;position: relative;margin: 0em auto 0em auto;padding:0;}
+
+	#header {width: 100%;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
+		#title {width: 700px;height: 20px;background-image: url(../images/bg/header.jpg);background-position: top center;background-repeat: no-repeat;border-top: 0px;border-right: 0px solid #aaa;border-bottom: 0px solid #aaa;border-left: 0px solid #aaa;Margin: 0px 0px 0px 0px;padding: 50px 0px 0px 0px;}
+		#title h1 {color: #fff;font-size: 24px;line-height: 24px;font-weight: bold;text-transform: uppercase;margin: -30px 0px 0px 10px;padding: 0px 0px 0px 0px;}
+		#title h2 {display:none;color: #fff;font-size: 11px;line-height: 16px;font-weight: normal;padding: 0px 0px 0px 3px;text-transform: uppercase;margin: 0px 0px 0px 10px;padding: 0px 0px 10px 4px;}
+
+	#navigation { width: 100%;background-image: url(../images/bg/bg_menu.gif);background-position: top center;background-repeat: repeat;border: 0px solid #aaa;margin: 10px 0px 10px 0px;padding: 10px;}
+		#navigation p{color: #fff;text-transform: uppercase;margin:0;line-height:2.5em;}
+		#navigation #path{border-bottom:1px dotted;border-right:1px dotted;border-top:1px dotted;width:84%;}
+
+	div #bottom-bar {display:none;margin:0.4em -2em -0.5em 0;text-align:right;}
+	#footer {width: 100%;color: #7fc937;border: 1px solid #aaa;background-color: #284C00;margin:1em 0 1em 0;padding:10px;text-align: center;}
+
+	.box_content {width: 100%;border: 1px solid #aaa;background-image: url(../images/bg/foglia_up.gif);background-position: bottom center;background-repeat: no-repeat;background-color: #fff;margin: 1em 0px 0px 0px;padding: 10px 10px 30px 10px;}
+		.box_content h3 {color: #284C00;background-color: #ddd;background-image: url(../images/bg/bg_content.gif);background-position: bottom center;background-repeat: repeat;font-size: 11px;line-height: 16px;text-transform: uppercase;margin: -10px -10px 4px -10px;padding: 4px 4px 4px 10px;}
+
+	#utility {display:none;margin:0 0 1em 0;}
+		#utility a{color:gray;}
+		#utility a:hover{color:silver;}
+
+	#colonnadx {display:none;position: absolute;top: 255px;left: 0px;width: 220px;margin: 0px 0px 0px 482px;padding: 0px 0px 0px 0px;}
+
+	.menu_box {background-color: #fff;border: 1px solid #aaa;margin: 0px 0px 10px 0px;padding: 0px 0px 0px 0px;}
+		.menu_box div {padding:2px;}
+
+	#utility_box {display:none;background-color: transparent;border: 0px solid #aaa;margin:-0.8em -2em -1em -0.5em;padding: 0px 0px 0px 0px;text-align:right;}
+
+		.menu { list-style-image:url(../images/foglia1.gif);margin:0 0 0 1em;width:80%;padding:0.5em;margin:0em 0 1em 3.5em;line-height:2em;}
+
+			.menu li { color: #6c9e2d;margin-top: 1px;font-style:italic;}
+			.menu li a { color:#446c0e;padding: 0.5em;font-style:normal;border-bottom:1px dotted gray;text-decoration:none; }
+			.menu li a:hover {color:#7fc937;}
+
+			.menu li ul{ list-style-image:url(../images/list.gif);margin:0 0 0 3em;width:80%;padding:0.5em;padding-left:2em;line-height:2em;}
+			.menu li ul li  a{text-align:right;padding-right:0em;}
+
+
+
+	#colonnadx h3 {color: #7fc937;background-color: #446c0e;background-image: url(../images/bg/bg_menu.gif);background-position: center right;background-repeat: repeat-x;font-size: 11px;line-height: 16px;font-weight: bold;text-transform: uppercase;text-align: left;border-bottom: 1px solid #aaa;margin: 0px 0px 0px 0px;padding: 3px 5px 3px 5px;}
+
+	#evidenza_list {padding:0;}
+		#evidenza_list ul { list-style-type:decimal;}
+		#evidenza_list li { line-height:1em;color: #6c9e2d;margin:1em 0 0 0;font-style:normal;border-bottom:1px dotted;border-right:1px dotted;padding:0 0.3em 0.2em 0;margin-right:1em;}
+
+
+
+
+
+	#logo {width: 60px;height:60px;background-image: url(../images/logo.png);background-position: center center;background-repeat: no-repeat;float:right;margin:-0.5em 0 0 0;}
+
+	#iwa { margin:1em 0 0 4.5em; }
+	#paypal { margin:1em 0 2em 7em; }
+
+
+	/**********************		ERRORE	****************************/
+	#errore { background-color:#ffeeee;border-top: 5px solid #dc143c;border-bottom: 5px solid #dc143c;margin-top:1em;color:#dc143c;background-image:url("'../img/varie/notice-alert.png'");background-repeat:no-repeat;background-position:center right;padding:0.7em;padding-right:4em;text-align:right;}
+	#alert { background-color:#ffffe0;border-top: 5px solid yellow;border-bottom: 5px solid yellow;margin-top:1em;color:black;background-image:url("'../img/varie/alert_lrg.gif'");background-repeat:no-repeat;background-position:center right;padding:0.7em;padding-right:4em;text-align:right;}
+	#verify { background-color:#90ee90;border-top: 5px solid lime;border-bottom: 5px solid lime;margin-top:1em;color:green;background-image:url("'../img/varie/tick.png'");background-repeat:no-repeat;background-position:center right;padding:0.7em;padding-right:4em;text-align:right;}
+
+	#error {padding:0em;margin:0 auto 0 auto;background-image: url(../errore/alert.jpg);background-position: center center;background-repeat: no-repeat;width:100px;height:100px;}
+
+	#report_errori { color:red;margin-top:0.1em;margin-bottom:1em;width:100%;}
+	#report_errori ul {  color:red; border:1px solid red;padding:0.5em;padding-left:4em;list-style-type: decimal;font-weight:bold;}
+
+	/**********************		INDEX    ****************************/
+	div#motto { text-align:right;padding:0.5em 0em 0.5em 0em;line-height:1.2em;}
+
+	div.successo { float:right;margin:0em 0em 0em 0.5em;background-image:url("'../img/successo3.jpg'");background-repeat:no-repeat;background-position:center center;width:92px;height:70px;}
+	div.virgolette { float:right;margin:0em 0em 0em 0.5em;background-image:url("'../img/virgoletteDx.jpg'");background-repeat:no-repeat;background-position:center center;width:58px;height:46px;}
+
+	#index #w3c {display:none;float:left;margin:1em;border:1px solid gray;padding:0.5em 0.5em 1.5em 0.5em; background-image:url("'../img/logo/w3clogo.png'");background-repeat:no-repeat;background-position:center center;width:83px;height:65px;}
+	/**********************		ACCESSIBILITA  ****************************/
+	div#tim{ text-align:right;padding:0.5em 3em 2em 0em; border-bottom:1px solid gray;line-height:1.2em;}
+	/**********************		TABELLA NAVIGAZIONE ****************************/
+	#links_table {border:1px solid white;width:100%;}
+	#links_table_title {background-color:#ffd;text-align:left;padding:1em;font-weight:bold;background-color:#dcdcdc; border:1px solid black;}
+	.links_rows2	 {background-color:white;text-align:left;color:white;padding:0.5em;}
+	.links_rows		{border:1px solid silver;padding:0.5em;background-color:white;color:black;}
+	.links_rows1	{border:1px solid silver;padding:0.5em;background-color:white;color:red;}
+	/**********************	preventivi  ****************************/
+	div#form_preventivo { border:1px solid silver;width:90%;margin:auto;padding:2em;}
+	div#opzioni_preventivo { border:1px solid silver;width:90%;padding:1em;}
+	div#campo_preventivo p{ padding-top:1em;}
+	/**********************	contatti  ****************************/
+	#contatti dt{padding: 5px 0px 5px 0px;float: left;margin: 0 1em;}
+	#contatti dd{padding: 5px 0px 5px 0px;margin-left:19em;margin-right:7em;border-bottom:1px dotted silver;}
+	/**********************	portfolio  ****************************/
+	.categoria {padding: 1em;border:1px solid silver;margin:1em 0 0 0;}
+	.sito {margin:2em 0 0 0;}
+	.sito p { line-height:0.5em;}
+
+	#portfolio {background-color:transparent;}
+		#portfolio #enti {padding:0.5em 0.5em 0.5em 0;margin:1em 0 0 0;background-image:url("'../img/portfolio/wp-community.jpg'");background-repeat:no-repeat;background-position:center center;width:120px;height:20px;border:1px solid silver;border-right:30px solid #0379bf;}
+		#portfolio #blog {padding:0.5em 0.5em 0.5em 0;margin:1em 0 0 0; background-image:url("'../img/portfolio/blog.jpg'");background-repeat:no-repeat;background-position:center center;width:120px;height:20px;border:1px solid silver;border-left:30px solid #ffd700;}
+		#portfolio #consulenza {padding:0.5em 0.5em 0.5em 0;margin:1em 0 0 0; background-image:url("'../img/portfolio/consulenti.jpg'");background-repeat:no-repeat;background-position:center center;width:120px;height:20px;border:1px solid silver;border-right:30px solid #00b800;}
+		#portfolio #negozi {padding:0.5em 0.5em 0.5em 0;margin:1em 0 0 0; background-image:url("'../img/portfolio/shops.jpg'");background-repeat:no-repeat;background-position:center center;width:120px;height:20px;border:1px solid silver;border-left:30px solid red;}
+
+
+
+	#serviziforniti { margin:0 0 0 0;padding:0 1em 0 1em;}
+	#img_text {float:left;margin:0.5em 2em 0em 2em;padding:0.5em;}
+	#listaservizi {padding:0 0 0 13em;}
+
+	/**********************	questionario  ****************************/
+	#questionario dt{padding:5px;float:left;margin:0px;font-weight:bold;}
+	#questionario dd{margin-left:200px;padding:5px;}
+	#questionario dd#val{margin-left:200px;padding:5px;letter-spacing:5px;}
+	/**********************	webmaster  ****************************/
+	#tecnologie ul{list-style-type:none;}
+	#tecnologie li {line-height:2em;}
+	#tecnologie.img_line { position: relative;top: 5px;}
+
+	#caratteristiche ul{ background-color:transparent; }
+	#caratteristiche li { margin-top:1em; }
+	/**********************	Presentazione  ****************************/
+	#presentazione {background-color:transparent;}
+		#presentazione #img_presentazione {display:none;float:left;margin:1em;border:1px solid gray;padding:0.5em; background-image:url("'../img/chi/storia7.jpg'");background-repeat:no-repeat;background-position:center center;width:150px;height:99px;}
+		#presentazione #img_presentazione1 {display:none;float:left;margin:1em;padding:0.5em; background-image:url("'../img/chi/servizi.jpg'");background-repeat:no-repeat;background-position:center center;width:200px;height:150px;}
+	/**********************	Assistenza Tec  ****************************/
+		#prezzo_ass5 { float:left;margin:1em 0em 1em 4em;width:80%;}
+		#prezzo_ass10 { float:right;margin:2em 0em 1em 4em;width:300px;}
+
+		#prezzo_ass_rem5 { float:left;margin:4em 0em 1em 4em;width:300px;}
+		#prezzo_ass_rem10 { float:right;margin:2em 0em 1em 4em;width:300px;}
+		#prezzo_ass_rem15 { float:left;margin:4em 0em 1em 4em;width:300px;}
+		#prezzo_ass_rem20 { float:right;margin:2em 0em 1em 4em;width:300px;}
+	/**********************	Evidenza  ****************************/
+	#pagevidenza {background-color:transparent;}
+		#pagevidenza #postacert { margin:1em; border:1px solid silver;padding:1em}
+			#pagevidenza #postacert ul{ list-style-type:decimal; }
+			#pagevidenza #postacert li{ text-align:justify; }
+
+		#pagevidenza #gradimento { margin:1em; border:1px solid silver;padding:1em}
+		#pagevidenza #obbligoimprese { margin:1em; border:1px solid silver;padding:1em}
+	/**********************	Mappa  ****************************/
+	#mappa { margin:auto; width: 70%; }
+		#menu_mappa { list-style-image:url(../images/foglia1.gif);margin:0 0 0 1em;width:80%;padding:0.5em;margin:0em 0 1em 3.5em;line-height:2em;}
+
+			#menu_mappa li { color: #6c9e2d;margin-top: 1px;font-style:italic;}
+			#menu_mappa li a { color:#446c0e;padding: 0.5em;font-style:normal;border-bottom:1px dotted gray;text-decoration:none; }
+			#menu_mappa li a:hover {color:#7fc937;}
+
+			#menu_mappa li ul{ list-style-image:url(../images/list.gif);margin:0 0 0 3em;width:80%;padding:0.5em;padding-left:2em;line-height:2em;}
+			#menu_mappa li ul li  a{text-align:right;padding-right:0em;}
+	/**********************	offerta  ****************************/
+	.box_offerta {min-height:90px;}
+			.offerta {float:left;margin:-1em 4em 0em -1em;}
+		.prezzo_info {float:right;margin:0 0 2em 0;}
+		.txt_offerta {background-color:transparent;}
+		.txt_offerta  ul {padding:1em 0 0 0;}
