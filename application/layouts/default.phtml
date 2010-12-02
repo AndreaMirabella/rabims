@@ -8,8 +8,8 @@
     <meta name="robots" content="all" />
     <title>Servizi Rabi Multiservices</title>
     <?php
-          echo $this->headLink()->prependStylesheet($this->baseUrl('css/style.css'), 'screen');
-          //echo $this->headLink()->appendStylesheet($this->baseUrl('css/print.css'), 'print');
+          echo $this->headLink()->prependStylesheet($this->baseUrl('css/screen.css'), 'screen')
+                                ->appendStylesheet($this->baseUrl('css/print.css'), 'print');
     ?>
     <link rel="shortcut icon" href="<?php echo $this->baseUrl('images/favicon.ico'); ?>" type="image/x-icon" />
 </head>
@@ -19,11 +19,10 @@
 		<div class="TopHeader">
 			<div class="Logo"><a href="<?php echo $this->url(array('controller'=>'index'),'default',true); ?>"><img src="<?php echo $this->baseUrl('images/logo/RabiMultiservices.png'); ?>" alt="Rabi Multiservices" /></a></div>
 			<div class="HeaderContent">
-				
 				<!--<div class="LanguageBar">
-					
+
 				</div>-->
-				<div class="HeaderPath"><?php include 'includes/menu.inc.php'; ?></div>
+				<div class="HeaderPath"><?php include 'menu.phtml'; ?></div>
 			</div>
 		</div>
 		<div class="cMain">

@@ -1,0 +1,193 @@
+<?php
+
+function menuBuilder($sP_URL = false){
+		
+		$sLocation = substr(basename($sP_URL), 0, strpos(basename($sP_URL), "."));
+		
+		switch($sLocation)
+		{
+		case "";
+		// <img class=\"evidenza\" src=\"images/New.png\" alt=\"#\"/>
+		default:
+				 $HTML ="
+				<ul class=\"menu\">
+					<li><a href=\"index.php\" accesskey=\"I\"><strong>Home</strong></a> [ I ]</li>
+					<li><a href=\"presentazione.php\" accesskey=\"S\">Chi Siamo</a> [ S ]</li>
+					<li><a  href=\"webmaster.php\" accesskey=\"W\"><strong>Web Design</strong></a> [ W ]
+						<ul>
+							<li><a href=\"portfolio.php\" accesskey=\"1\">Portfolio</a> [ 1 ]</li>
+							<li><a href=\"accessibilita1.php\" accesskey=\"2\">Accessibilit&agrave;</a> [ 2 ]</li>
+							<li><a href=\"prezzi.php\" accesskey=\"3\">Listino Prezzi</a> [ 3 ]</li>
+							<li><a href=\"preventivo.php\" accesskey=\"4\">Preventivo</a> [ 4 ]</li>
+						</ul>
+					</li>
+					<li><a href=\"pec.php\" accesskey=\"E\"><strong>PEC</strong></a> [ E ]
+						<ul>
+							<li><a href=\"pecprezzi.php\" accesskey=\"5\">Listino Prezzi</a> [ 5 ]</li>
+						</ul>
+					</li>
+					<li><a href=\"cv.php\" accesskey=\"V\"><strong>CV on-line</strong></a> [ V ]</li>
+					
+					<li><a href=\"contatti.php\" accesskey=\"C\">Contatti</a> [ C ]</li>
+					<li><a href=\"clienti.php\" accesskey=\"K\">Area Clienti</a> [ K ]</li>
+				</ul>
+				"; 
+				
+					/* 	<ul>
+							<li><a href=\"cvprezzi.php\" accesskey=\"8\">Listino Prezzi</a> [ 8 ]</li>
+							<li><a href=\"cv/example/\" accesskey=\"9\">Esempi</a> [ 9 ]</li>
+				
+						</ul> */
+				
+					/*
+					<li><a href=\"assistenza.php\" accesskey=\"T\"><strong>Assistenza Tecnica</strong></a> [ T ]
+						<ul>
+							<li><a href=\"prezzi1.php\" accesskey=\"6\">Listino Prezzi</a> [ 6 ]</li>
+						</ul>
+					</li>
+					
+					
+					*/
+				
+			
+				// 	<li><a href=\"assistenza1.php\" accesskey=\"5\">Interventi [ 5 ]</a></li>
+				//<li><a href=\"abbonamento.php\" accesskey=\"6\">Abbonamento [ 6 ]</a></li>
+
+				//<li><a href=\"cvprezzi.php\" accesskey=\"0\">Listino Prezzi [ 0 ]</a></li>
+		break;
+		}
+	return $HTML;
+}
+function PathBuilder($sP_URL) {
+
+	$sLocation = substr(basename($sP_URL), 0, strpos(basename($sP_URL), "."));
+
+					switch ($sLocation) {
+						
+						case "index":
+							$path[0]="";
+							$path[1]=" Home Page ";
+						break;
+						case "contatti":
+							$path[0]=" / Contatti ";
+							$path[1]=" Contatti ";
+						break;
+						case "accessibilita":
+							$path[0]=" / Accessibilit&agrave; ";
+							$path[1]=" Accessibilit&agrave; ";
+						break;
+						case "mappa":
+							$path[0]=" / Mappa ";
+							$path[1]=" Mappa del Sito ";
+						break;
+						case "privacy":
+							$path[0]=" / Privacy ";
+							$path[1]=" Trattamento dati personali ";
+						break;
+						case "help":
+							$path[0]=" / Navigazione ";
+							$path[1]=" Navigazione ";
+						break;
+						case "presentazione":
+							$path[0]=" / Chi Siamo ";
+							$path[1]=" Chi siamo ";
+						break;
+						case "assistenza":
+							$path[0]=" / Assistenza tecnica ";
+							$path[1]=" Assistenza Tecnica ";
+						break;
+						case "clienti":
+							$path[0]=" / Area Clienti ";
+							$path[1]=" Area Clienti ";
+						break;
+						case "webmaster":
+							$path[0]=" / Web-design ";
+							$path[1]=" Web Design ";
+						break;
+						case "portfolio":
+							$path[0]=" / Web-design / Portfolio ";
+							$path[1]=" Portfolio ";
+						break;
+						case "admin":
+							$path[0]=" / Administration Login ";
+							$path[1]=" Administration Login ";
+						break;
+						case "panel":
+							$path[0]=" / Pannello di Amministrazione ";
+							$path[1]=" Pannello di Controllo ";
+						break;
+						case "accessibilita1":
+							$path[0]=" / Web-design / Accessibilit&agrave; ";
+							$path[1]=" Accessibilit&agrave; nel Web ";
+						break;
+						case "prezzi":
+							$path[0]=" / Web-design / Listino Prezzi ";
+							$path[1]=" Listino Prezzi Web ";
+						break;
+						case "prezzi1":
+							$path[0]=" / Assistenza Tecnica / Listino Prezzi ";
+							$path[1]=" Listino Prezzi Assistenza ";
+						break;
+						case "abbonamento":
+							$path[0]=" / Assistenza Tecnica / Abbonamento ";
+							$path[1]=" Abbonamento Assistenza ";
+						break;
+						case "assistenza1":
+							$path[0]=" / Assistenza Tecnica / Interventi ";
+							$path[1]=" Interventi Tecnici ";
+						break;
+						case "preventivo":
+							$path[0]=" / Web-design / Preventivi ";
+							$path[1]=" Preventivo ";
+						break;
+						case "segnala":
+							$path[0]=" / Segnala questa pagina ";
+							$path[1]=" Segnala questa pagina ";
+						break;
+						case "disfunzione":
+							$path[0]=" / Segnala una disfunzione ";
+							$path[1]=" Segnala una disfunzione ";
+						break;
+						case "cv":
+							$path[0]=" / CV On-line ";
+							$path[1]=" CV On-line ";
+						break;
+						case "cvprezzi":
+							$path[0]=" / CV On-line / Listino Prezzi";
+							$path[1]=" Listino Prezzi CV";
+						break;
+						case "cvofferte":
+							$path[0]=" / CV On-line / Offerte ";
+							$path[1]=" Offerte CV ";
+						break;
+						case "evidenza":
+							$path[0]=" / Evidenza ";
+							$path[1]=" Informazioni in Evidenza ";
+						break;
+						case "forgot":
+							$path[0]=" / Recupero credenziali ";
+							$path[1]=" Recupero credenziali di accesso ";
+						break;
+						case "reset":
+							$path[0]=" / Reset credenziali ";
+							$path[1]=" Reset credenziali di accesso ";
+						break;
+						case "pec":
+							$path[0]=" / PEC ";
+							$path[1]=" Posta Elettronica Certificata ";
+						break;
+						break;
+						/* case "":
+							$path[0]="";
+							$path[1]="";
+						break; */
+						default:
+							$path[0]="";
+							$path[1]=" Home ";
+						break;
+						
+					}	
+				
+				return $path;
+}
+?>

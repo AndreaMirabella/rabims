@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Marco De Bortoli <marco@ibuildings.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "Chi Siamo"
+
+msgid "Web Design"
+msgstr "Web Design"
+
+msgid "Portfolio"
+msgstr "Portfolio"
+
+msgid "Accessibility"
+msgstr "Accessibilità"
+
+msgid "Prices"
+msgstr "Prezzi"
+
+msgid "Quotation"
+msgstr "Preventivo"
+
+msgid "PEC"
+msgstr "PEC"
+
+msgid "Resume On Line"
+msgstr "CV On Line"
+
+msgid "Contacts"
+msgstr "Contatti"
+
+msgid "Clients Area"
+msgstr "Area Clienti"
+
