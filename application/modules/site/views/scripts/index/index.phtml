@@ -4,3 +4,17 @@
  * @date: Dec 1, 2010
  * @package Site
  */
+	require_once 'Zend/Db.php';
+
+	$db = Zend_Db::factory('Mysqli',
+		array(
+			'host'		=> 'localhost',
+			'dbname'	=> 'web',
+			'username'	=> 'root',
+			'password'	=> '')
+		);
+
+	$data = $db->fetchAll('SELECT * FROM assistenza_services');
+	foreach ($data as $row) {
+		echo $row['service'];
+	}
