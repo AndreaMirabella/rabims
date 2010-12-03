@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Marco De Bortoli <marco@ibuildings.com>\n"
+"Last-Translator: Andrea Mirabella <andrea.mirabella@rabims.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 msgid "Home"
 msgstr "Home"
@@ -41,4 +41,19 @@ msgstr "Contatti"
 
 msgid "Clients Area"
 msgstr "Area Clienti"
+
+msgid "Services1"
+msgstr "A"
+
+msgid "Services2"
+msgstr "A"
+
+msgid "Services3"
+msgstr "A"
+
+msgid "Services4"
+msgstr "A"
+
+msgid "Services5"
+msgstr "A"
 

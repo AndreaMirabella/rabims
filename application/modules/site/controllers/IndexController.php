@@ -13,7 +13,8 @@ class Site_IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-
+		$this->view->headTitle()->prepend('Home page');
+		$this->view->title = 'Home page';
     }
 }
 

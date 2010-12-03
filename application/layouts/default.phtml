@@ -6,7 +6,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="robots" content="all" />
-    <title>Servizi Rabi Multiservices</title>
+    <?php echo $this->headTitle(); ?>
+	<?php echo $this->headScript() ?> 
     <?php
           echo $this->headLink()->prependStylesheet($this->baseUrl('css/screen.css'), 'screen')
                                 ->appendStylesheet($this->baseUrl('css/print.css'), 'print');

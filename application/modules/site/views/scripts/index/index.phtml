@@ -4,8 +4,6 @@
  * @date: Dec 1, 2010
  * @package Site
  */
-	require_once 'Zend/Db.php';
-
 	$db = Zend_Db::factory('Mysqli',
 		array(
 			'host'		=> 'localhost',
@@ -14,7 +12,23 @@
 			'password'	=> '')
 		);
 
-	$data = $db->fetchAll('SELECT * FROM assistenza_services');
-	foreach ($data as $row) {
-		echo $row['service'];
-	}
+?>
+
+	<p>Ecco i servizi messi a disposizione da Rabi Multiservices:</p>
+	<dl class="Servizi">
+		<?php 
+			$data = $db->fetchAll(" SELECT * FROM assistenza_services WHERE disabled<>'1' ");
+			foreach ($data as $row) {
+				
+				echo '<dd >';
+				echo '<a href="#"><img class="Img" src="'.$this->baseUrl('images/index/'.stripslashes($row['icon']).'').'"  alt="'.stripslashes($row['service']).'" /></a>';
+				echo '&nbsp;';
+				echo '<span class="h2"><a href="#">'.stripslashes($row['service']).'</a></span>';
+				echo '<div class="MenuDesc">';
+				echo stripslashes($row['description']);
+				echo '</div>';
+				echo '</dd>';
+			}
+		?>
+	</dl>
+	<div class="break">&nbsp;</div>
